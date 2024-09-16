@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html + JavaScript</title>
+   <style>
+
+.circle {
+    height: 50px;
+    width:50px;
+    background-color: #699;
+    border-radius: 50%
+}
+.square {
+    height: 50px;
+    width:50px;
+    background-color: #993;
+   
+}
+.triangle{
+
+    width: 0;
+    height:0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #911;
+}
+   </style>
+</head>
+
+<body>
+   
+        <h1>H.A.C | Hazardous, Anomaly, Corp </h1>
+<select id = "shapes">
+<optgroup label = "Low Danger">
+    <option value ="Square">Square</option>
+    </optgroup>
+    <optgroup label="Medium Danger">
+        <option value="Circle">Circle</option>
+</optgroup>
+<optgroup label = "High Danger">
+    <option value="Triangle">Triangle</option>
+</optgroup>
+</select>
+
+<input type = button value ="Select" onclick="shapeChange()"/>
+<div id="danger"></div>
+
+        <p>H.A.C-038 the creature: HAC-038</p>
+
+        <p id="para2"> something</p>
+
+        <p id="para3" > something more</p>
+
+
+
+        <button onclick="collapse()">Hide</button>
+
+        <button onclick="show()">Show</button><br><br>
+
+<input type="text" id="colorInputText">
+
+<input type="button" id="colorButton" value = "Click to change color" onclick="changeColor()"><br><br>
+        
+        <a href="textcolor.html">Document 038</a><br>
+    
+    <script src="scripts/app.js" defer></script>
+</body>
+
+</html>
