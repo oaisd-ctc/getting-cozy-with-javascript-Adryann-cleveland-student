@@ -5,68 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html + JavaScript</title>
-   <style>
 
-.circle {
-    height: 50px;
-    width:50px;
-    background-color: #699;
-    border-radius: 50%
-}
-.square {
-    height: 50px;
-    width:50px;
-    background-color: #993;
-   
-}
-.triangle{
+    <link rel="stylesheet" href="CssFolder/indexcss.css" />
 
-    width: 0;
-    height:0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid #911;
-}
-   </style>
 </head>
 
 <body>
-   
-        <h1>H.A.C | Hazardous, Anomaly, Corp </h1>
-<select id = "shapes">
-<optgroup label = "Low Danger">
-    <option value ="Square">Square</option>
-    </optgroup>
-    <optgroup label="Medium Danger">
-        <option value="Circle">Circle</option>
-</optgroup>
-<optgroup label = "High Danger">
-    <option value="Triangle">Triangle</option>
-</optgroup>
-</select>
 
-<input type = button value ="Select" onclick="shapeChange()"/>
-<div id="danger"></div>
+    <h1>JavaScript + Html</h1>
+    <select id="shapes">
+        <optgroup label="Low Danger">
+            <option value="Square">Square</option>
+        </optgroup>
+        <optgroup label="Medium Danger">
+            <option value="Circle">Circle</option>
+        </optgroup>
+        <optgroup label="High Danger">
+            <option value="Triangle">Triangle</option>
+        </optgroup>
+    </select>
 
-        <p>H.A.C-038 the creature: HAC-038</p>
+    <input type=button value="Select" onclick="shapeChange()" />
+    <div id="danger"></div>
 
-        <p id="para2"> something</p>
+    <p>H.A.C | Hazardous, Anomaly, Corp</p>
 
-        <p id="para3" > something more</p>
+    <p id="para2"> H.A.C name came from Xaxier, a little thing i want to make some lore for kinda like S.C.P but with my
+        own creatures and possble turn into a video game in the far furture. the shapes above and there color i plan on
+        turning into labels for anomalys to indicate how dangrouse they are.</p>
 
+    <p id="para3">the game would be a horror game, right now only three characters are made for it, two monsters and one
+        crazed scientist. I hope to add more to this.</p>
 
+    <button onclick="collapse()">Hide</button>
+    <button onclick="show()">Show</button><br><br>
 
-        <button onclick="collapse()">Hide</button>
+    <input type="text" id="colorInputText">
 
-        <button onclick="show()">Show</button><br><br>
+    <input type="button" id="colorButton" value="Click to change color" onclick="changeColor()"><br><br>
 
-<input type="text" id="colorInputText">
-
-<input type="button" id="colorButton" value = "Click to change color" onclick="changeColor()"><br><br>
-        
-        <a href="textcolor.html">Document 038</a><br>
-    
+    <a href="Extra.html">Extra</a><br><br>
+    <a href="web/Form.html">Form page</a><br><br>
+    <a href="web/taskHolder.html">Lists</a><br><br>
+    <a href="web/animation.html">Animation</a><br><br>
+    <a href="web/ToggleDiv.html">Toggle</a>
     <script src="scripts/app.js" defer></script>
+
 </body>
 
 </html>
