@@ -3,29 +3,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add&Delet List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add&Delet List</title>
 
-    <link rel="stylesheet" href="/CssFolder/task.css" />
+  <link rel="stylesheet" href="/CssFolder/task.css" />
 
 </head>
 
 <body>
 
   <div class="container">
-<h1>To-Do List</h1>
-<input type="text" id="taskInput" placeholder="Add a Task">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a Task">
+    <!--the button below when clicked will ad whatevet task you typed above to the ul below, 
+    the javascript takes the ids of the button and list to make the button add to the list and it also creates a delete button to delte from the list, 
+    the javascript also uses JSON to save whatever is added to the list inside the local storage folder-->
+    <button id="addTask">Add</button>
+    <ul id="taskList">
 
-<button id="addTask">Add</button>
-<ul id="taskList">
-
-</ul>
+    </ul>
   </div>
 
   <a href="/index.html">Home</a><br>
   <script src="/scripts/taskList.js" defer>
-    </script>
+  </script>
 
 </body>
 
